@@ -10,7 +10,8 @@
     </style>
 </head>
 <body>
-    <h1>KNN Model</h1>
+    <h1>KNN Model</h1></br>
+    <p>This is a simple model used to predict if a tumor is malignant or begnign</p></br>
     <form action="{{ url_for('predict')}}" method="POST">
         Radius_Mean:  <input type="number" name="radius_mean"></br>
         Perimeter_Mean:  <input type="number" name="perimeter_mean"></br>
@@ -20,5 +21,7 @@
         <input type=submit value=Submit>
    </form>
     <h1>My final prediction: {{ predict }}</h1>
+    <p>A value of 0 = Benign Tumor</p>
+    <p>A value of 1 = Malignant Tumor</p>
 </body>
 </html>
