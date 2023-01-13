@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Iris Classification</title>
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
 </head>
 <body>
+    <h1>KNN Model</h1>
     <form action="{{ url_for('predict')}}" method="POST">
         Radius_Mean:  <input type="number" name="radius_mean"></br>
         Perimeter_Mean:  <input type="number" name="perimeter_mean"></br>
@@ -25,6 +31,6 @@
 
         <input type=submit value=Submit>
    </form>
-    My final prediction: {{ predict }}
+    <h1>My final prediction: {{ predict }}</h1>
 </body>
 </html>
