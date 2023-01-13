@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KNN Classification</title>
+    <title>KNN Classification Model</title>
     <style>
         h1 {
             color: red;
@@ -11,7 +11,8 @@
 </head>
 <body>
     <h1>KNN Model</h1>
-    <p>Nearest Neighbor model used to predict if a tumor is malignant or benign</p>
+    <h4>Author:  Daniel Lagos</h4>
+    <p>K-Nearest Neighbor model used to predict if a tumor is malignant or benign</p>
     <form action="{{ url_for('predict')}}" method="POST">
         Radius_Mean:  <input type="text" name="radius_mean"></br>
         Perimeter_Mean:  <input type="text" name="perimeter_mean"></br>
@@ -20,7 +21,7 @@
 
         <input type=submit value=Submit>
    </form>
-    <h1>My final prediction: {{ predict }}</h1>
+    <h2>Prediction: {{ predict }}</h2>
     <p>A value of 0 = Benign Tumor</p>
     <p>A value of 1 = Malignant Tumor</p>
 </body>
