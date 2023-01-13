@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Iris Classification</title>
+    <title>KNN Classification</title>
     <style>
         h1 {
             color: red;
@@ -10,13 +10,13 @@
     </style>
 </head>
 <body>
-    <h1>KNN Model</h1></br>
-    <p>This is a simple model used to predict if a tumor is malignant or begnign</p></br>
+    <h1>KNN Model</h1>
+    <p>Nearest Neighbor model used to predict if a tumor is malignant or benign</p>
     <form action="{{ url_for('predict')}}" method="POST">
-        Radius_Mean:  <input type="number" name="radius_mean"></br>
-        Perimeter_Mean:  <input type="number" name="perimeter_mean"></br>
-	    Area_Mean:  <input type="number" name="area_mean"></br>
-	    Compactness_Mean:  <input type="number" name="compactness_mean"></br>
+        Radius_Mean:  <input type="text" name="radius_mean"></br>
+        Perimeter_Mean:  <input type="text" name="perimeter_mean"></br>
+	    Area_Mean:  <input type="text" name="area_mean"></br>
+	    Compactness_Mean:  <input type="text" name="compactness_mean"></br>
 
         <input type=submit value=Submit>
    </form>
